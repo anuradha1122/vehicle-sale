@@ -4,7 +4,7 @@ const getBaseUrl = () => {
     let url;
     switch(process.env.NODE_ENV) {
       case 'production':
-        url = 'https://stackoverflow.com/';
+        url = 'https://www.vehicle.lms.lk/';
         break;
       case 'development':
       default:
