@@ -1,0 +1,291 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$primary: #256D85;
+$secondary: #8FE3CF;
+$light: #ffffff;
+$dark: #002B5B;
+$danger: #f81206;
+$success: #1fa03b;
+$info: #737beb;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "light": $light,
+    "dark": $dark,
+    "danger": $danger,
+    "success": $success,
+    "info": $info,
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+/* Also install slick-carousel for css and font */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+body {
+    background-color: rgb(242, 243, 243);
+    font-family: Arial, sans-serif;
+    h3{
+        font-size: 20px;
+        font-weight: 700;
+        color: $primary; 
+    }
+  }
+
+.footer{
+    background-color: $secondary;
+    font-size: small;
+    margin: 0px;
+    p{
+        margin-top: 10px;
+        text-align: left;
+    }
+    h6{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .main-footer{
+        a {
+            color: $primary;
+            text-decoration: none;
+            margin-left: 5px;
+          }
+          a:hover {
+            color: $dark;
+          }
+    }
+    .copyright{
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+.brand{
+    img{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+  }
+
+  .login-form {
+    width: 300px;
+    height: 500px;
+    //background-color: rgb(255, 255, 255);
+    //position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+  }
+
+  .reg-form {
+    width: 400px;
+    height: auto;
+    //background-color: rgb(255, 255, 255);
+    //position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+  }
+
+  .home-title{
+    color: #8dc5c5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h4{
+        font-size: 20px;
+        font-weight: 700;       
+    }
+    p{
+        font-size: 14px;
+    }
+  }
+.vehicle-top-brands-card {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    color: $primary;
+    div {
+        display: inline-block;
+    }
+    .v-logo{
+        width: 80px;
+    }
+    .content{
+        vertical-align: middle;
+        margin-left: 10px;
+        span{
+            font-size: 12;
+            font-weight: 700;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
+
+.ads-serch-panel{
+    display: flex;
+    color: $primary;
+    font-size: 14px;
+    h6{
+        font-weight: 700;
+    }
+    .left-manu{
+        width: 300px;
+        margin-right: 10px;
+        border-right: 1px solid $secondary;
+        ul{
+            li{
+                padding: 5px;
+            }
+        }
+        a {
+            color: $primary;
+            text-decoration: none;
+            margin-left: 10px;
+          }
+          a:hover {
+            color: $dark;
+          }
+        img{
+            width: 20px;
+        }
+    }
+
+    .right-panel{
+        width: auto;
+    }
+}
+
+.ads-view-container{
+    color: $primary;
+    font-size: 14px;
+    h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    h5{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+
+.img-upload-container:hover{
+    border: solid $primary 2px;  
+}
+
+.custom-file-input{
+    input[type="file"] {
+        display: none;
+    }
+    label{
+        width: 100%;
+        border: 1px solid #a19e9e;
+        border-radius: 5px;
+        border-style:dashed;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        text-align: center;
+        color: #a19e9e ;
+    }
+
+    label:hover{
+        border: 1px solid $primary;
+        border-radius: 5px;
+    }
+  }
+.crop-img-div{
+    border: #bebebe solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 100px;
+    
+    .images{
+        position:relative;
+        display:inline-block;
+
+        .notify-badge{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            border-radius: 5px;
+            right:5px;
+            top:5px;
+            background:red;
+            text-align: center;
+            color:white;
+            padding: 0px;
+            font-size:16px;
+        }
+
+        img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin: 5px;
+        }
+    }
+    
+    
+}
+
+.ads-card-0{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    color: $primary;
+    border: $secondary solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: $light;
+
+    .img-div{
+        img{
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        @media only screen and (max-width: 768px) {
+            img{
+                width: 200px;
+                height: 200px;
+            }
+          }
+    }
+    .ads-container{
+        width: 100%;
+        padding: 10px;
+        h6{
+            font-size: 14px;
+            font-weight: 800;
+        }
+    }
+
+}
+
+.ads-card-0:hover{
+    box-shadow: 0 4px 8px 0 rgba(79, 214, 231, 0.2), 0 6px 20px 0 rgba(79, 214, 231, 0.2);
+}
